@@ -87,41 +87,42 @@ int main()
 	//cout << nom;
 
 
+
+
+
+
+
 	// 1215
 
-	int N;
-	double Min = numeric_limits<double>::max();
-	double dist;
-	//cout << Min;
-	Point  P;
-	cin >> P.x >> P.y >> N;
-	Point* Aim = new Point[N];
-	int n = 0;
-	while (n < N)
-	{
-		cin >> Aim[n].x >> Aim[n].y;
-		n++;
-	}
+	//int N;
+	//double Min = numeric_limits<double>::max();
+	//double dist;
+	////cout << Min;
+	//Point  P;
+	//cin >> P.x >> P.y >> N;
+	//Point* Aim = new Point[N];
+	//int n = 0;
+	//while (n < N)
+	//{
+	//	cin >> Aim[n].x >> Aim[n].y;
+	//	n++;
+	//}
 
-	if (InsideAim(P, Aim, N)) {
-		cout << 0.000 << endl;
-		return 0;
-	}
+	//if (InsideAim(P, Aim, N)) {
+	//	cout << 0.000 << endl;
+	//	return 0;
+	//}
 
-	for (int i = 1; i < N; i++)
-	{
-		dist = DistToSegment(Aim[i - 1], Aim[i], P);
-		if (dist < Min) Min = dist;
-	}
+	//for (int i = 1; i < N; i++)
+	//{
+	//	dist = DistToSegment(Aim[i - 1], Aim[i], P);
+	//	if (dist < Min) Min = dist;
+	//}
 
-	dist = DistToSegment(Aim[0], Aim[N - 1], P);
-	if (dist < Min) Min = dist;
+	//dist = DistToSegment(Aim[0], Aim[N - 1], P);
+	//if (dist < Min) Min = dist;
 
-	cout << fixed << setprecision(3) << 2 * Min << endl;
-
-
-
-
+	//cout << fixed << setprecision(3) << 2 * Min << endl;
 
 
 
