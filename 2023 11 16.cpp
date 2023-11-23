@@ -119,25 +119,7 @@ int main()
 		F = true;
 		
 
-		//for (int j = lenth - 1; j > lenth - 2 * markN; j--)
-		//{
-
-		//	if (isdigit(str[j]))
-		//	{
-		//		//cout << str[j];
-		//		if (!(str[j] >= '4'))
-		//		{
-		//			F = false;
-		//			break;
-		//		}
-		//	}
-
-
-		//}
-		/*if (F)
-		{
-			output << str << endl;
-		}*/
+		
 	}
 
 
