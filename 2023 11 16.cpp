@@ -87,25 +87,57 @@ int main()
 		getline(input, str);
 		int lenth = str.length();
 		cout << str << endl;
-		for (int j = lenth - 1; j > lenth - 2 * markN; j--)
+		string seName="";
+		for (char i : str)
 		{
-
-			if (isdigit(str[j]))
+		
+			if (F && isalpha(i)) seName += i;
+			else F = false;
+			
+			
+				//cout << i;
+				
+			if (i != ' ')
 			{
-				//cout << str[j];
-				if (!(str[j] >= '4'))
+					
+				if (((int)i - '0') > 3 && ((int)i - '0') <= 5)
 				{
-					F = false;
+					seName = seName + ' ' + i;
+					
+				}
+				else if (((int)i - '0') <= 3 && ((int)i - '0') >= 2)
+				{
+					F = true;
 					break;
 				}
+					
 			}
-
-
+			
 		}
-		if (F)
+		if (!F) output << seName << endl;
+		seName = "";
+		F = true;
+		
+
+		//for (int j = lenth - 1; j > lenth - 2 * markN; j--)
+		//{
+
+		//	if (isdigit(str[j]))
+		//	{
+		//		//cout << str[j];
+		//		if (!(str[j] >= '4'))
+		//		{
+		//			F = false;
+		//			break;
+		//		}
+		//	}
+
+
+		//}
+		/*if (F)
 		{
 			output << str << endl;
-		}
+		}*/
 	}
 
 
@@ -116,7 +148,7 @@ int main()
 
 
 	// ДЗ  1506-Столбцы чисел, Обратный прядок, 5 задание на массивы номер 4)
-	int N, K;
+	//int N, K;
 
 
 
